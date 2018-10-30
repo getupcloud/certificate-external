@@ -6,7 +6,7 @@
     ed=`eval $expdate`
     daysleft=`echo $(($(($(date -u -d "$ed" "+%s") - $(date -u -d "$today" "+%s"))) / 86400))`
     text="${ENDPOINT} - expiring on: $ed , $daysleft days left to go."
-    echo $daysleft
+    echo $expiredate
 
     if [ $daysleft -le 60 ]
     then
