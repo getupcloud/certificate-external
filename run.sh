@@ -13,6 +13,6 @@
           webhook_url='${WEBHOOK_URL}'
           channel='${CHANNEL}'
           json="{\"channel\": \"${CHANNEL}\", \"username\":\"certificates\", \"icon_emoji\":\":scream_cat:\", \"attachments\":[{\"color\":\"danger\" , \"text\": \"$text\"}]}"
-          curl -X POST --data-urlencode  "payload=$json" "$WEBHOOK_URL"
+          curl -X POST --data-urlencode  "payload=$json" "$webhook_url"
     fi
 
